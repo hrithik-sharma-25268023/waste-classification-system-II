@@ -18,7 +18,7 @@ https://www.kaggle.com/datasets/sumn2u/garbage-classification-v2
 
 
 tree -d datasets/
-
+```
 datasets/
 ├── Garbage Classification Dataset
 │   └── Garbage classification
@@ -93,3 +93,4 @@ datasets/
         ├── paper
         ├── plastic
         └── trash
+```
