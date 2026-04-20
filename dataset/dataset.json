@@ -1,0 +1,312 @@
+{
+  "class_mapping": {
+    "Glass": [
+      "glass"
+    ],
+    "Paper": [
+      "paper"
+    ],
+    "Cardboard": [
+      "cardboard"
+    ],
+    "Plastic": [
+      "plastic"
+    ],
+    "Metal": [
+      "metal"
+    ],
+    "E-waste": [
+      "e-waste",
+      "Battery",
+      "Keyboard",
+      "Microwave",
+      "Mobile",
+      "Mouse",
+      "PCB",
+      "Player",
+      "Printer",
+      "Television",
+      "Washing Machine"
+    ],
+    "Batteries": [
+      "battery"
+    ],
+    "Organic": [
+      "biological",
+      "organic"
+    ],
+    "Textile": [
+      "clothes",
+      "textile",
+      "shoes"
+    ],
+    "Trash": [
+      "trash"
+    ]
+  },
+  "datasets": [
+    {
+      "name": "Garbage Classification Dataset",
+      "enabled": true,
+      "source": "datasets/Garbage Classification Dataset/Garbage classification/Garbage classification",
+      "subdatasets": [
+        {
+          "name": "main",
+          "enabled": true,
+          "base_path": "Garbage Classification Dataset/Garbage classification/Garbage classification",
+          "classes": {
+            "cardboard": {
+              "enabled": true,
+              "path": "cardboard",
+              "label": "Cardboard"
+            },
+            "glass": {
+              "enabled": true,
+              "path": "glass",
+              "label": "Glass"
+            },
+            "metal": {
+              "enabled": true,
+              "path": "metal",
+              "label": "Metal"
+            },
+            "paper": {
+              "enabled": true,
+              "path": "paper",
+              "label": "Paper"
+            },
+            "plastic": {
+              "enabled": true,
+              "path": "plastic",
+              "label": "Plastic"
+            },
+            "trash": {
+              "enabled": true,
+              "path": "trash",
+              "label": "Trash"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Garbage Dataset",
+      "enabled": true,
+      "subdatasets": [
+        {
+          "name": "original",
+          "enabled": true,
+          "base_path": "Garbage Dataset/original",
+          "classes": {
+            "battery": {
+              "enabled": true,
+              "path": "battery",
+              "label": "Batteries"
+            },
+            "biological": {
+              "enabled": true,
+              "path": "biological",
+              "label": "Organic"
+            },
+            "cardboard": {
+              "enabled": true,
+              "path": "cardboard",
+              "label": "Cardboard"
+            },
+            "clothes": {
+              "enabled": true,
+              "path": "clothes",
+              "label": "Textile"
+            },
+            "glass": {
+              "enabled": true,
+              "path": "glass",
+              "label": "Glass"
+            },
+            "metal": {
+              "enabled": true,
+              "path": "metal",
+              "label": "Metal"
+            },
+            "paper": {
+              "enabled": true,
+              "path": "paper",
+              "label": "Paper"
+            },
+            "plastic": {
+              "enabled": true,
+              "path": "plastic",
+              "label": "Plastic"
+            },
+            "shoes": {
+              "enabled": true,
+              "path": "shoes",
+              "label": "Textile"
+            },
+            "trash": {
+              "enabled": true,
+              "path": "trash",
+              "label": "Trash"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "New Trash Classification Dataset",
+      "enabled": true,
+      "subdatasets": [
+        {
+          "name": "new-dataset-trash-type-v2",
+          "enabled": true,
+          "base_path": "New Trash Classfication Dataset/new-dataset-trash-type-v2",
+          "classes": {
+            "cardboard": {
+              "enabled": true,
+              "path": "cardboard",
+              "label": "Cardboard"
+            },
+            "e-waste": {
+              "enabled": true,
+              "path": "e-waste",
+              "label": "E-waste"
+            },
+            "glass": {
+              "enabled": true,
+              "path": "glass",
+              "label": "Glass"
+            },
+            "metal": {
+              "enabled": true,
+              "path": "metal",
+              "label": "Metal"
+            },
+            "organic": {
+              "enabled": true,
+              "path": "organic",
+              "label": "Organic"
+            },
+            "paper": {
+              "enabled": true,
+              "path": "paper",
+              "label": "Paper"
+            },
+            "plastic": {
+              "enabled": true,
+              "path": "plastic",
+              "label": "Plastic"
+            },
+            "textile": {
+              "enabled": true,
+              "path": "textile",
+              "label": "Textile"
+            },
+            "trash": {
+              "enabled": true,
+              "path": "trash",
+              "label": "Trash"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Waste Classification Dataset",
+      "enabled": true,
+      "subdatasets": [
+        {
+          "name": "balanced_waste_images",
+          "enabled": true,
+          "base_path": "Waste Classfication Dataset/balanced_waste_images",
+          "classes": {
+            "Battery": {
+              "enabled": true,
+              "path": "Battery",
+              "label": "E-waste"
+            },
+            "Keyboard": {
+              "enabled": true,
+              "path": "Keyboard",
+              "label": "E-waste"
+            },
+            "Microwave": {
+              "enabled": true,
+              "path": "Microwave",
+              "label": "E-waste"
+            },
+            "Mobile": {
+              "enabled": true,
+              "path": "Mobile",
+              "label": "E-waste"
+            },
+            "Mouse": {
+              "enabled": true,
+              "path": "Mouse",
+              "label": "E-waste"
+            },
+            "PCB": {
+              "enabled": true,
+              "path": "PCB",
+              "label": "E-waste"
+            },
+            "Player": {
+              "enabled": true,
+              "path": "Player",
+              "label": "E-waste"
+            },
+            "Printer": {
+              "enabled": true,
+              "path": "Printer",
+              "label": "E-waste"
+            },
+            "Television": {
+              "enabled": true,
+              "path": "Television",
+              "label": "E-waste"
+            },
+            "Washing Machine": {
+              "enabled": true,
+              "path": "Washing Machine",
+              "label": "E-waste"
+            },
+            "cardboard": {
+              "enabled": true,
+              "path": "cardboard",
+              "label": "Cardboard"
+            },
+            "glass": {
+              "enabled": true,
+              "path": "glass",
+              "label": "Glass"
+            },
+            "metal": {
+              "enabled": true,
+              "path": "metal",
+              "label": "Metal"
+            },
+            "organic": {
+              "enabled": true,
+              "path": "organic",
+              "label": "Organic"
+            },
+            "paper": {
+              "enabled": true,
+              "path": "paper",
+              "label": "Paper"
+            },
+            "plastic": {
+              "enabled": true,
+              "path": "plastic",
+              "label": "Plastic"
+            },
+            "trash": {
+              "enabled": true,
+              "path": "trash",
+              "label": "Trash"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
