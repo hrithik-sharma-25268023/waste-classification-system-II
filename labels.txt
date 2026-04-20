@@ -1,0 +1,9 @@
+1. Glass
+2. E waste
+3. Organic
+4. Paper
+5. Cardboard
+6. Plastic
+7. batteries
+8. Textile
+9. Trash
