@@ -1,5 +1,6 @@
 # waste-classification-system-II
 
-# Create the Environment
+## Create the Environment
 
-conda env create --file environment.yml 
+**conda env create --file environment.yml** 
+
