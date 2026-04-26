@@ -1,0 +1,9 @@
+cardboard
+e-waste
+glass
+metal
+organic
+paper
+plastic
+textile
+trash
