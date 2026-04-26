@@ -11,7 +11,7 @@ def load_dataset(dataset_path):
         validation_split=0.2,
         subset="training",
         seed=42,
-        image_size=(48, 48),
+        image_size=(64, 64),
         batch_size=32
     )
 
@@ -20,7 +20,7 @@ def load_dataset(dataset_path):
         validation_split=0.2,
         subset="validation",
         seed=42,
-        image_size=(48, 48),
+        image_size=(64, 64),
         batch_size=32
     )
 
