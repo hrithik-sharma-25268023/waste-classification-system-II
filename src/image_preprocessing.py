@@ -25,10 +25,6 @@ def load_dataset(dataset_path):
     )
 
     class_names = train_ds.class_names
-    normalization_layer = tf.keras.layers.Rescaling(1./255)
-
-    train_ds = train_ds.map(lambda x, y: (normalization_layer(x), y))
-    val_ds   = val_ds.map(lambda x, y: (normalization_layer(x), y))
     AUTOTUNE = tf.data.AUTOTUNE
     train_ds = train_ds.cache().shuffle(1000).prefetch(AUTOTUNE)
     val_ds   = val_ds.cache().prefetch(AUTOTUNE)
