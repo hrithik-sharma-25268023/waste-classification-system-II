@@ -11,7 +11,7 @@ def load_dataset(dataset_path):
         validation_split=0.2,
         subset="training",
         seed=42,
-        image_size=(64, 64),
+        image_size=(48, 48),
         batch_size=32
     )
 
@@ -20,15 +20,11 @@ def load_dataset(dataset_path):
         validation_split=0.2,
         subset="validation",
         seed=42,
-        image_size=(64, 64),
+        image_size=(48, 48),
         batch_size=32
     )
 
     class_names = train_ds.class_names
-    normalization_layer = tf.keras.layers.Rescaling(1./255)
-
-    train_ds = train_ds.map(lambda x, y: (normalization_layer(x), y))
-    val_ds   = val_ds.map(lambda x, y: (normalization_layer(x), y))
     AUTOTUNE = tf.data.AUTOTUNE
     train_ds = train_ds.cache().shuffle(1000).prefetch(AUTOTUNE)
     val_ds   = val_ds.cache().prefetch(AUTOTUNE)
