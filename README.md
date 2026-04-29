@@ -4,7 +4,7 @@
 
 **conda env create --file environment.yml** 
 
-#### Simple Explanation of All Models We Tried
+# Simple Explanation of All Models We Tried
 This project tested many different image‑classification models to figure out which one works best for sorting waste into five categories: organic, cardboard, paper, plastic, textile.
 Below is a simple explanation of each model, why we tried it, and what problems we faced.
 
