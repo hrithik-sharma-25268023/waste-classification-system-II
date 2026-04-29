@@ -162,5 +162,5 @@ This made the process challenging because we had to test many combinations of:
 
 2. Model architectures
 
-Pretrained vs. custom models
+### The most important Challenge at the end was Pretrained vs. custom models
 
