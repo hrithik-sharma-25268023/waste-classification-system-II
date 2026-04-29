@@ -37,6 +37,28 @@ Better than grayscale, but still struggled with fine textures.
 Some classes looked too similar at this size.
 
 Result: okay performance, but not reliable.
+Medium‑Small Images (64×64)
+(This is the section you wanted added.)
+
+## 64×64×1 and 64×64×3 – MobileNet Variants + Custom Layers
+At first, accuracy slowly climbed to around 55–60%.
+
+After that, the model started memorizing the training images instead of learning real patterns.
+
+Training accuracy kept increasing, but validation accuracy dropped sharply.The reason as to why this happened is - 
+
+64×64 still didn’t have enough detail for waste images.
+
+Important textures (paper vs. plastic vs. cardboard) were still too blurry.
+
+Adding more layers only made the model overfit faster.
+
+Result
+Accuracy capped at ~60%.
+
+Validation accuracy fell dramatically after that.
+
+These models were not reliable and couldn’t be used for real‑world classification.
 
 ## Medium Images (96×96)
 (This turned out to be the sweet spot.)
