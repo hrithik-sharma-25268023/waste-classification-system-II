@@ -40,28 +40,22 @@ Result: okay performance, but not reliable.
 Medium‑Small Images (64×64)
 (This is the section you wanted added.)
 
-## 64×64×1 and 64×64×3 – MobileNet Variants + Custom Layers
-At first, accuracy slowly climbed to around 55–60%.
+## 64×64×1 and 64×64×3 – MobileNet Variants and Custom Layers
+At first, accuracy slowly climbed to around 55–60%. After that, the model started memorizing the training images instead of learning real patterns. Training accuracy kept increasing, but validation accuracy dropped sharply.The reason as to why this happened is - 
 
-After that, the model started memorizing the training images instead of learning real patterns.
+1. 64×64 still didn’t have enough detail for waste images.
 
-Training accuracy kept increasing, but validation accuracy dropped sharply.The reason as to why this happened is - 
+2. Important textures (paper vs. plastic vs. cardboard) were still too blurry.
 
-64×64 still didn’t have enough detail for waste images.
-
-Important textures (paper vs. plastic vs. cardboard) were still too blurry.
-
-Adding more layers only made the model overfit faster.
+3. Adding more layers only made the model overfit faster.
 
 Result
 Accuracy capped at ~60%.
 
-Validation accuracy fell dramatically after that.
-
-These models were not reliable and couldn’t be used for real‑world classification.
+Validation accuracy fell dramatically after that. These models were not reliable and couldn’t be used for real‑world classification.
 
 ## Medium Images (96×96)
-(This turned out to be the sweet spot.)
+This turned out to be the size from where the accuracy started to climb and get better.
 
 # 96×96×3 – MobileNetV1
 Simple and fast, worked decently.
