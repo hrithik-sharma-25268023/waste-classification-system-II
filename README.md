@@ -180,3 +180,5 @@ This made the process challenging because we had to test many combinations of:
 
 ### The most important Challenge at the end was Pretrained vs. custom models
 
+
+# At last we ended up making a Custom Tiny CNN of 96x96 RGB pretrained by Mobilenet V2 0.35
